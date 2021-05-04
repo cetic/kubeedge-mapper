@@ -1,0 +1,12 @@
+[Unit]
+Description=mapper.service
+
+[Service]
+Type=simple
+Environment=XAUTHORITY=/root/.Xauthority
+Environment=DISPLAY=:0.0
+WorkingDirectory=/app
+ExecStart=/app/mapper.armhf
+
+[Install]
+WantedBy=graphical.target

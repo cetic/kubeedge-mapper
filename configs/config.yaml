@@ -1,0 +1,10 @@
+type: CPU #CPU,GPU or FPGA
+model: <device-type>  #A name to describe the device (Raspberry, Ultra96v2...)
+DeviceID: edge-dev-01 #Device ID used by KubeEdge
+launchers: python3    #Launcher used by the mapper
+broker:
+  host: localhost #Broker IP address
+  port: 1883          #Broker port
+sourcepath:
+  #Path where the files will be downloaded
+  "/app/"
