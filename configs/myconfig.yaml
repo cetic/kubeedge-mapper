@@ -6,4 +6,4 @@ broker:
   host: 192.168.2.19
   port: 1883
 sourcepath:
-  "/Users/tse/CETIC/viaduct/POCEdge/kubeedge-edge-worker/examples/"
+  "/Users/tse/CETIC/viaduct/POCEdge/KubeEdgeMapper/script/"
