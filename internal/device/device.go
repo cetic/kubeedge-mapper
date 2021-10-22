@@ -78,8 +78,7 @@ func (d *Device) Listen() {
 		os.Exit(0)
 	}()
 	// Still App Open
-	for {
-	}
+	select {}
 }
 
 //
