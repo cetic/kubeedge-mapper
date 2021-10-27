@@ -3,10 +3,6 @@ package device
 import (
 	"bufio"
 	"encoding/json"
-	iMQTT "github.com/cetic/kubeedge-mapper/internal/mqtt"
-	mqtt "github.com/eclipse/paho.mqtt.golang"
-	"github.com/kubeedge/kubeedge/edge/pkg/devicetwin/dttype"
-	"gopkg.in/yaml.v2"
 	"io"
 	"io/ioutil"
 	"log"
@@ -15,6 +11,11 @@ import (
 	"os/signal"
 	"strings"
 	"syscall"
+
+	iMQTT "github.com/cetic/kubeedge-mapper/internal/mqtt"
+	mqtt "github.com/eclipse/paho.mqtt.golang"
+	"github.com/kubeedge/kubeedge/edge/pkg/devicetwin/dttype"
+	"gopkg.in/yaml.v2"
 )
 
 // Device Type
@@ -198,6 +199,7 @@ func (d *Device) run() {
 			d.sendTwinActualValue("TaskCompleted")
 		}
 	}()
+	//d.sendTwinActualValue("LaunchTask")
 }
 
 func (d *Device) sendTwinSensorActualValue(device, value string) {

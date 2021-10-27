@@ -1,0 +1,9 @@
+type: CPU
+model: mac
+DeviceID: edge-dev-tse-mac
+launchers: python3
+broker:
+  host: 192.168.1.197
+  port: 1883
+sourcepath:
+  "/Users/tse/Desktop/Backup/CETIC/viaduct/POCEdge/KubeedgeMapper/script/"
